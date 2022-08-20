@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import Header from '../src/components/header/header';
+import HomeContainer from '../src/containers/HomeContainer';
+
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
 function App() {
+  const data = {
+    fname: 'Prakash chand',
+    id: "0005"
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='col-md-12'>
+        <div className='st'>
+          <div className='col-md-2'>
+            <Header />
+          </div>
+          <div className='col-md-10'>
+            <HomeContainer data={data} />
+          </div>
+        </div>
+      </div>
+
+    </>
   );
 }
 
