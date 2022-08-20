@@ -8,10 +8,7 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
 function App() {
-  const data = {
-    fname: 'Prakash chand',
-    id: "0005"
-  }
+  
   return (
     <>
       <div className='col-md-12'>
@@ -20,7 +17,7 @@ function App() {
             <Header />
           </div>
           <div className='col-md-10'>
-            <HomeContainer data={data} />
+            <HomeContainer />
           </div>
         </div>
       </div>
