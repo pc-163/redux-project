@@ -1,9 +1,9 @@
-import React from 'react'
+
 // import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 // import "../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
     
@@ -41,7 +41,7 @@ const Header = () => {
           <li>
             <a className="nav-link text-white">
               <svg className="bi pe-none me-2" width="16" height="16"></svg>
-              Customers
+              Cart <span>{props.data.length}</span>
             </a>
           </li>
         </ul>

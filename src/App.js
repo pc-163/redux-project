@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import Header from '../src/components/header/header';
+import HeaderContainer from '../src/containers/HeaderContainer';
 import HomeContainer from '../src/containers/HomeContainer';
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
@@ -14,7 +14,7 @@ function App() {
       <div className='col-md-12'>
         <div className='st'>
           <div className='col-md-2'>
-            <Header />
+            <HeaderContainer />
           </div>
           <div className='col-md-10'>
             <HomeContainer />

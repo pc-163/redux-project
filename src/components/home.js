@@ -1,6 +1,6 @@
 
 const Home = (props) => {
-      console.log('Home', props);
+      console.log('Home', props.data);
       return (
             <div className="container">
                   <div className="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5">
@@ -20,8 +20,8 @@ const Home = (props) => {
 
                                     <div className="card-body">
                                           <img src="https://image01.oneplus.net/ebp/202111/02/1-M00-2F-6B-rB8bwmGBOlSAAfFmAAHpf3oYVyE439.png" alt="" className="img-fluid" />
-                                          <h1 className="card-title pricing-card-title">$200</h1>
-                                          <button type="button" className="w-100 btn btn-lg btn-primary">Add to cart</button>
+                                          <h1 className="card-title pricing-card-title">$300</h1>
+                                          <button type="button" className="w-100 btn btn-lg btn-primary" onClick={()=>props.addToCartHandler({price: 300})}>Add to cart</button>
                                     </div>
                               </div>
                         </div>
@@ -30,8 +30,10 @@ const Home = (props) => {
 
                                     <div className="card-body">
                                           <img src="https://image01.oneplus.net/ebp/202204/20/1-M00-39-A2-rB8bwmJf88eAG5xxAAL7M_wQ9d8738.png" alt="" className="img-fluid" />
-                                          <h1 className="card-title pricing-card-title">$200</h1>
-                                          <button type="button" className="w-100 btn btn-lg btn-primary">Add to cart</button>
+                                          <h1 className="card-title pricing-card-title">$400</h1>
+                                          <button type="button" className="w-100 btn btn-lg btn-primary" onClick={()=>props.addToCartHandler({price: 400})}>Add to cart</button>
+                                          <button type="button" className="w-100 btn btn-lg btn-primary" onClick={()=>props.removeToCartHandler()}>Remove to cart</button>
+
                                     </div>
                               </div>
                         </div>
